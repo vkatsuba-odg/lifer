@@ -1,6 +1,11 @@
 # lifer
 Schema generator prototype from LIF data
 
+# Requirements
+  * Python version 3.6.x or higher
+  * Install **fastavro**
+  * Install **rec_avro**
+
 # Run
 ```sh
 $ git clone https://github.com/vkatsuba-odg/lifer.git
