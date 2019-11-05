@@ -106,7 +106,7 @@ def typing(x):
 # Helper for typing
 '''
  For ISO 8601 is used pattern '%Y-%m-%dT%H:%M:%S%z'
- But in current test.if file is used '01/12' format for date what is equal to pattern '%m/%d'
+ But in current test.lif file is used '01/12' format for date what is equal to pattern '%m/%d'
 '''
 def typing_helper(data):
     try:
