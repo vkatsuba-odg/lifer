@@ -336,17 +336,16 @@ def gen_parser():
 def gen_schema(name):
     with open(name, 'rb') as f_in:
         lif_json = gen_json(name)
-        write_schema(infer(looper(lif_json)))
+        write_schema(infer(looper(lif_json), verbose=True))
 
 def looper(data):
     if type(data) is dict:
         for key, value in data.items():
             data[key] = looper(value)
     elif type(data) is list:
-        for i in data:
-            looper(i)
+        return [looper(i) for i in data]
     else:
-        return pre_type(pytype(data))
+        return pytype(data)
 
     return data
 
