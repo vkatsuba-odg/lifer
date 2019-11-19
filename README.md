@@ -2,7 +2,7 @@
 Schema generator prototype from LIF data
 
 # Requirements
-  * Python version 3.6.x or higher
+  * Python version **3.6.x** or higher
   * Install **fastavro**
   * Install **rec_avro**
 
