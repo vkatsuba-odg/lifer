@@ -6,7 +6,15 @@ Schema generator prototype from LIF data
   * Install **fastavro**
   * Install **rec_avro**
 
-# Run
+# Run `schemer.py`
+```sh
+$ git clone https://github.com/vkatsuba-odg/lifer.git
+$ cd lifer
+$ ./schemer.py -l test.lif
+$ cat schemer_output.json
+```
+
+# Run `lifer.py`
 ```sh
 $ git clone https://github.com/vkatsuba-odg/lifer.git
 $ cd lifer
